@@ -10,6 +10,10 @@ app.set("views", path.join(__dirname, "views"));
 
 app.set(express.static(path.join(__dirname, "public")));
 
+app.get("/", (req, res) => {
+    res.send("server is working well");
+});
+
 app.listen(port, (req, res) => {
     console.log(`listening to the port${port}`);
 });
