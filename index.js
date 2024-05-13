@@ -10,10 +10,15 @@ app.set("views", path.join(__dirname, "views"));
 
 app.set(express.static(path.join(__dirname, "public")));
 
-let posts = {
-    name : "Binay",
-    content : "i'm a software developer"
-}
+let posts = [
+    {
+        name : "Binay",
+        content : "i'm a software enginer"
+    },
+    {
+        
+    }
+]
 
 app.get("/", (req, res) => {
     res.send("server is working well");
