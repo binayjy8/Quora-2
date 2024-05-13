@@ -21,7 +21,7 @@ let posts = [
     }
 ]
 
-app.get("/post", (req, res) => {
+app.get("/posts", (req, res) => {
     res.render("index.ejs");
 });
 
