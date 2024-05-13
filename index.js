@@ -29,6 +29,12 @@ app.get("/posts/new", (req, res) => {
     res.render("new.ejs");
 });
 
+app.post("/posts", (req, res) => {
+    let{name, content} = req.body;
+    posts.push({ name, content});
+    res.send("its working");
+});
+
 app.listen(port, (req, res) => {
     console.log(`listening to the port${port}`);
 });
