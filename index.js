@@ -16,7 +16,8 @@ let posts = [
         content : "i'm a software enginer"
     },
     {
-        
+        name : "Cric",
+        content : "play cricket"
     }
 ]
 
