@@ -39,9 +39,9 @@ app.post("/posts", (req, res) => {
     res.redirect("/posts");
 });
 
-app.get("/posts/:id", (req, es) => {
+app.get("/posts/:id", (req, res) => {
     let { id } = req.params;
-    let post = post.find((p) => id === p.id);
+    let post = posts.find((p) => id === p.id);
     res.render("show.ejs", {post});
 });
 
