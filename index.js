@@ -10,7 +10,7 @@ app.set("views", path.join(__dirname, "views"));
 
 app.set(express.static(path.join(__dirname, "public")));
 
-let post = {
+let posts = {
     name : "Binay",
     content : "i'm a software developer"
 }
