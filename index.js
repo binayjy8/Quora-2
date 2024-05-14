@@ -62,6 +62,12 @@ app.get("/posts/:id", (req, res) => {
     res.render("show.ejs",{ post });
 });
 
+app.delete("/posts/:id", (req, res) => {
+    let { id } = req.params;
+    posts = posts.find((p) => id !== p.id);
+    res.redirect("/posts");
+})
+
 app.listen(port, (req, res) => {
     console.log(`listening to the port${port}`);
 });
