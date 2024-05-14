@@ -64,7 +64,7 @@ app.get("/posts/:id", (req, res) => {
 
 app.delete("/posts/:id", (req, res) => {
     let { id } = req.params;
-    posts = posts.find((p) => id !== p.id);
+    posts = posts.filter((p) => id !== p.id);
     res.redirect("/posts");
 })
 
