@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 let posts = [
     { 
-        id : "1a",
+        id : uuidv4(),
         username : "Binay",
         content : "i'm a software enginer"
     },
@@ -42,7 +42,7 @@ app.post("/posts", (req, res) => {
 app.get("/posts/:id", (req, res) => {
     let { id } = req.params;
     let post = posts.find((p) => id === p.id);
-    res.render("show.ejs");
+    res.render("show.ejs",{ post });
 });
 
 app.listen(port, (req, res) => {
