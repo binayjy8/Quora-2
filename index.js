@@ -23,6 +23,9 @@ let posts = [
         id : uuidv4(),
         username : "Cric",
         content : "play cricket"
+    },
+    {
+        id : uuidv4(),
     }
 ]
 
