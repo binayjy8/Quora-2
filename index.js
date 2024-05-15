@@ -27,6 +27,7 @@ let posts = [
     {
         id : uuidv4(),
         username : "Rahul",
+        content : "He is a coder"
     }
 ]
 
