@@ -26,7 +26,7 @@ let posts = [
     },
     {
         id : uuidv4(),
-        username : "Rahul"
+        username : "Rahul",
     }
 ]
 
