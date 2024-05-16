@@ -29,6 +29,9 @@ let posts = [
         username : "Rahul",
         content : "He is a coder"
     },
+    {
+        id : uuidv4(),
+    }
 ]
 
 app.get("/posts", (req, res) => {
