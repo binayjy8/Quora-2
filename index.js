@@ -36,6 +36,8 @@ let posts = [
     },
     {
         id : uuidv4(),
+        username : "Sipla",
+        content : "love to code"
     }
 ]
 
