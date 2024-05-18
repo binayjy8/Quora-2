@@ -39,6 +39,7 @@ let posts = [
         username : "Sipla",
         content : "love to code"
     },
+    {}
 ]
 
 app.get("/posts", (req, res) => {
